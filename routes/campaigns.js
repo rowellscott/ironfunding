@@ -70,6 +70,7 @@ router.post('/:id', ensureLoggedIn('/login'), (req, res, next)=>{
     }
     return res.redirect(`/campaigns/${campaign._id}`)
 });
+});
 
 
 module.exports = router; 
